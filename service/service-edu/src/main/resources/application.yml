@@ -1,17 +1,21 @@
+#### application.yml
+spring:
+  application:
+    name: service-edu
 profiles:
   active: dev
-#### application-dev.yml
+
+####  application-dev.yml
 server:
   port: 8001
 mybatis-plus:
   configuration:
-  log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 mapper-locations: classpath:com/atguigu/service/*/mapper/*.xml
 global-config:
   db-config:
-  logic-delete-value: 1
+    logic-delete-value: 1
 logic-not-delete-value: 0
-spring:
 datasource:
   type: com.zaxxer.hikari.HikariDataSource
 driver-class-name: com.mysql.cj.jdbc.Driver
@@ -29,3 +33,5 @@ pool-name: GuliHikariPool
 jackson:
   date-format: yyyy-MM-dd HH:mm:ss
 time-zone: GMT+8
+
+
