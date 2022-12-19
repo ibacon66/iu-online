@@ -1,4 +1,4 @@
-package com.atguigu.eduservice;
+package com.atguigu;
 
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.annotation.IdType;
@@ -39,7 +39,7 @@ public class CodeGenerator {
 
         // 3、数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://ibacon-6.mysql.rds.aliyuncs.com:3306/guli?serverTimezone=GMT%2B8");
+        dsc.setUrl("jdbc:mysql://ibacon-6.mysql.rds.aliyuncs.com:3306/guli");
         dsc.setDriverName("com.mysql.cj.jdbc.Driver");
         dsc.setUsername("ibacon");
         dsc.setPassword("ibacon66");
@@ -48,7 +48,7 @@ public class CodeGenerator {
 
         // 4、包配置
         PackageConfig pc = new PackageConfig();
-        pc.setModuleName("edu"); //模块名
+        pc.setModuleName("eduservice"); //模块名
         pc.setParent("com.atguigu");
         pc.setController("controller");
         pc.setEntity("entity");

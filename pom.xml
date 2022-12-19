@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <modules>
         <module>service</module>
-        <module>service/service-edu</module>
+
         <module>common</module>
     </modules>
     <parent>
