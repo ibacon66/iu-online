@@ -39,7 +39,7 @@ public class SwaggerConfig {
                 .title("网站-课程中心API文档")
                 .description("本文档描述了课程中心微服务接口定义")
                 .version("1.0")
-                .contact(new Contact("ibacon", "http://iu.com", "315675274@qq.com"))
+                .contact(new Contact("ibacon", "https://ibacon.top", "315675274@qq.com"))
                 .build();
     }
 }
