@@ -12,8 +12,12 @@ import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import org.junit.Test;
 
 /**
- * @author
- * @since 2018/12/13
+ * <p>
+ * 代码生成器
+ * </p>
+ *
+ * @author ibacon66
+ * @since 2022-12-19
  */
 public class CodeGenerator {
 
