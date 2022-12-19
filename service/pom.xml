@@ -22,31 +22,31 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
-            <version>2.2.10.RELEASE</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.cloud</groupId>-->
+<!--            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>-->
+<!--            <version>2.2.10.RELEASE</version>-->
+<!--        </dependency>-->
 
-        <!--hystrix依赖，主要是用  @HystrixCommand -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
-            <version>2.2.10.RELEASE</version>
-        </dependency>
+<!--        &lt;!&ndash;hystrix依赖，主要是用  @HystrixCommand &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.cloud</groupId>-->
+<!--            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>-->
+<!--            <version>2.2.10.RELEASE</version>-->
+<!--        </dependency>-->
 
-        <!--服务注册-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-            <version>0.9.0.RELEASE</version>
-        </dependency>
-        <!--服务调用-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
-            <version>3.1.5</version>
-        </dependency>
+<!--        &lt;!&ndash;服务注册&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.cloud</groupId>-->
+<!--            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>-->
+<!--            <version>0.9.0.RELEASE</version>-->
+<!--        </dependency>-->
+<!--        &lt;!&ndash;服务调用&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.cloud</groupId>-->
+<!--            <artifactId>spring-cloud-starter-openfeign</artifactId>-->
+<!--            <version>3.1.5</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -58,7 +58,7 @@
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.5.2</version>
+            <version>3.0.5</version>
         </dependency>
 
         <!--mysql-->
