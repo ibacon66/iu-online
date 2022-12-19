@@ -1,8 +1,8 @@
-package com.atguigu.eduservice.controller;
+package com.ibacon.eduservice.controller;
 
 
-import com.atguigu.eduservice.entity.EduTeacher;
-import com.atguigu.eduservice.service.EduTeacherService;
+import com.ibacon.eduservice.entity.EduTeacher;
+import com.ibacon.eduservice.service.EduTeacherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

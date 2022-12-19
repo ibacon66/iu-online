@@ -4,7 +4,6 @@
     <modelVersion>4.0.0</modelVersion>
     <modules>
         <module>service</module>
-
         <module>common</module>
     </modules>
     <parent>
@@ -13,12 +12,12 @@
         <version>2.2.1.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.atguigu</groupId>
-    <artifactId>guli-parent</artifactId>
+    <groupId>com.ibacon</groupId>
+    <artifactId>iu-online</artifactId>
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
-    <name>guli-parent</name>
-    <description>guli-parent</description>
+    <name>iu-online</name>
+    <description>iu-online</description>
     <properties>
         <java.version>1.8</java.version>
         <guli.version>0.0.1-SNAPSHOT</guli.version>

@@ -1,4 +1,4 @@
-package com.atguigu.eduservice.entity;
+package com.ibacon.eduservice.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 

@@ -1,4 +1,4 @@
-package com.atguigu.eduservice.config;
+package com.ibacon.eduservice.config;
 
 
 import com.baomidou.mybatisplus.core.injector.ISqlInjector;
