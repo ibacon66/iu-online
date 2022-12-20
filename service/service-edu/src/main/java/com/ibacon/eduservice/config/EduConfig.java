@@ -9,6 +9,11 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * @author ibacon66
+ * @Description 插件配置
+ * @createTime 2022年12月19日 21:04:00
+ */
 @Configuration
 @MapperScan("com.ibacon.eduservice.mapper")
 public class EduConfig {

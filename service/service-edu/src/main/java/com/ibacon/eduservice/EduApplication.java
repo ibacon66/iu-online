@@ -4,6 +4,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
+/**
+ * @author ibacon66
+ * @Description APP启动类
+ * @createTime 2022年12月20日 21:04:00
+ */
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.ibacon"})
 public class EduApplication {

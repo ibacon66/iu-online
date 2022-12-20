@@ -60,7 +60,7 @@ public class EduTeacherController {
     }
 
     @ApiOperation(value = "分页讲师列表带条件")
-    @GetMapping("PageTeacherCondition/{page}/{limit}")
+    @GetMapping("pageTeacherCondition/{page}/{limit}")
     public R pageQuery(
             @ApiParam(name = "page", value = "当前页码", required = true)
             @PathVariable Long page,
@@ -68,7 +68,7 @@ public class EduTeacherController {
             @ApiParam(name = "limit", value = "每页记录数", required = true)
             @PathVariable Long limit,
 
-            @ApiParam(name = "teacherQuery", value = "查询对象", required = false)
+            @ApiParam(name = "teacherQuery", value = "查询对象")
             @RequestBody(required = false) TeacherQuery teacherQuery) {
 
         Page<EduTeacher> pageParam = new Page<>(page, limit);
@@ -79,5 +79,32 @@ public class EduTeacherController {
 
         return R.ok().data("total", total).data("rows", records);
     }
+    @ApiOperation(value = "根据id查询讲师")
+    @GetMapping("getTeacher/{id}")
+    public R getTeacher(@PathVariable String id){
+        EduTeacher eduTeacher = teacherService.getById(id);
+        return R.ok().data("teacher",eduTeacher);
+    }
+    @ApiOperation(value = "添加讲师")
+    @PostMapping("addTeacher")
+    public R addTeacher(@RequestBody EduTeacher eduTeacher){
+        boolean save = teacherService.save(eduTeacher);
+
+//        if(save){
+//            return R.ok();
+//        } else {
+//            return R.error();
+//        }
+        return save?R.ok():R.error();
+    }
+    @ApiOperation(value = "修改讲师")
+    @PostMapping("updateTeacher")
+    public R updateTeacher(@RequestBody EduTeacher eduTeacher){
+        boolean flag = teacherService.updateById(eduTeacher);
+        return flag?R.ok():R.error();
+    }
+
+
+
 }
 
