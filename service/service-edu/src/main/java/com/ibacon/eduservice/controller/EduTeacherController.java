@@ -69,7 +69,7 @@ public class EduTeacherController {
             @PathVariable Long limit,
 
             @ApiParam(name = "teacherQuery", value = "查询对象", required = false)
-            TeacherQuery teacherQuery) {
+            @RequestBody(required = false) TeacherQuery teacherQuery) {
 
         Page<EduTeacher> pageParam = new Page<>(page, limit);
 
