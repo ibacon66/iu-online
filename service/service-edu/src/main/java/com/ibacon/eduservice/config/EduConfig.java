@@ -18,10 +18,11 @@ import org.springframework.context.annotation.Configuration;
 @MapperScan("com.ibacon.eduservice.mapper")
 public class EduConfig {
     //逻辑删除插件
-        @Bean
+    @Bean
     public ISqlInjector sqlInjector() {
         return new LogicSqlInjector();
     }
+
     /**
      * 分页插件
      */
