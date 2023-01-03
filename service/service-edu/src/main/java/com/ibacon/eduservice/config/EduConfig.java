@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @author ibacon66
+ * @author zhangxin
  * @Description 插件配置
  * @createTime 2022年12月19日 21:04:00
  */

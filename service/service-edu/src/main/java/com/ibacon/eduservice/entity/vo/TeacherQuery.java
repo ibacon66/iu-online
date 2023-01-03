@@ -7,7 +7,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
- * @author ibacon66
+ * @author zhangxin
  * @Description 讲师查询对象
  * @createTime 2022年12月20日 19:03:00
  */

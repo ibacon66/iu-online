@@ -16,7 +16,7 @@ import lombok.EqualsAndHashCode;
  * 讲师
  * </p>
  *
- * @author ibacon66
+ * @author zhangxin
  * @since 2022-12-19
  */
 @Data

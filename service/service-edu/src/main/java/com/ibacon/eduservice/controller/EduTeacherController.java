@@ -18,7 +18,7 @@ import java.util.List;
  * 讲师 前端控制器
  * </p>
  *
- * @author ibacon66
+ * @author zhangxin
  * @since 2022-12-19
  */
 @RestController

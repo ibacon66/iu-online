@@ -16,7 +16,7 @@ import org.springframework.util.StringUtils;
  * 讲师 服务实现类
  * </p>
  *
- * @author ibacon66
+ * @author zhangxin
  * @since 2022-12-19
  */
 @Service
