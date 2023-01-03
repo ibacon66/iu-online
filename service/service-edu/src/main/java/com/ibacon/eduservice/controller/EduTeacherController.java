@@ -6,6 +6,7 @@ import com.ibacon.commonutils.R;
 import com.ibacon.eduservice.entity.EduTeacher;
 import com.ibacon.eduservice.entity.vo.TeacherQuery;
 import com.ibacon.eduservice.service.EduTeacherService;
+import com.ibacon.servicebase.exceptionhandler.IuException;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -55,6 +56,12 @@ public class EduTeacherController {
         teacherService.page(pageParam, null);
         List<EduTeacher> records = pageParam.getRecords();
         long total = pageParam.getTotal();
+
+//        try {
+//            int i = 1/0;  //统一异常处理测试用
+//        } catch (Exception e) {
+//            throw new IuException(20001,"自定义异常处理");
+//        }
 
         return R.ok().data("total", total).data("rows", records);
     }
