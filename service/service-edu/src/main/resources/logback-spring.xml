@@ -13,6 +13,7 @@
     <!-- 配置格式变量：CONSOLE_LOG_PATTERN 彩色日志格式 -->
     <!-- magenta:洋红 -->
     <!-- boldMagenta:粗红-->
+    <!-- cyan:青色 -->
     <property name="CONSOLE_LOG_PATTERN"
               value="%yellow(%date{yyyy-MM-dd HH:mm:ss}) |%highlight(%-5level) |%blue(%thread) |%blue(%file:%line) |%green(%logger) |%cyan(%msg%n)"/>
 
