@@ -2,6 +2,7 @@ package com.ibacon.servicebase.exceptionhandler;
 
 import com.ibacon.commonutils.R;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -48,6 +49,6 @@ public class GlobalExceptionHandler {
         e.printStackTrace();
         return R.error().code(e.getCode()).message(e.getMsg());
     }
-
+AbstractAdvisorAutoProxyCreator
 
 }
