@@ -58,7 +58,7 @@ public class EduTeacherController {
         long total = pageParam.getTotal();
 
 //        try {
-//            int i = 1/0;  //统一异常处理测试用
+//            int i = 1/0;  //异常处理测试用
 //        } catch (Exception e) {
 //            throw new IuException(20001,"自定义异常处理");
 //        }

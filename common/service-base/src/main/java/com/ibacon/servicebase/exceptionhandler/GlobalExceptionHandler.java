@@ -1,6 +1,7 @@
 package com.ibacon.servicebase.exceptionhandler;
 
 import com.ibacon.commonutils.R;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  */
 
 @ControllerAdvice
+@Slf4j
 public class GlobalExceptionHandler {
     /**
      * 全局异常处理
@@ -19,6 +21,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(Exception.class)
     @ResponseBody
     public R error(Exception e){
+        log.error(e.getMessage());
         e.printStackTrace();
         return R.error().message("全局异常处理");
     }
@@ -29,6 +32,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(ArithmeticException.class)
     @ResponseBody
     public R error(ArithmeticException e){
+        log.error(e.getMessage());
         e.printStackTrace();
         return R.error().message("执行了ArithmeticException异常处理");
     }
@@ -39,6 +43,8 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(IuException.class)
     @ResponseBody
     public R error(IuException e){
+        //输出错误日志到文件
+        log.error(e.getMessage());
         e.printStackTrace();
         return R.error().code(e.getCode()).message(e.getMsg());
     }
