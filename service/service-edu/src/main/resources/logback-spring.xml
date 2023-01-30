@@ -14,7 +14,6 @@
     <!-- magenta:洋红 -->
     <!-- boldMagenta:粗红-->
     <!-- cyan:青色 -->
-    <!-- white:白色 -->
     <property name="CONSOLE_LOG_PATTERN"
               value="%yellow(%date{yyyy-MM-dd HH:mm:ss}) |%highlight(%-5level) |%blue(%thread) |%blue(%file:%line) |%green(%logger) |%cyan(%msg%n)"/>
 
